@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+
+
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+<!-- font awesome-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+	<title>Wecome PyStory</title>
+</head>
+<body>
+<!-- 컨테이너 -->
+<div class="uk-container">
+<!-- Hearder-->
+<div uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <h3>Notice</h3>
+    <p>Hello.
+	To share your knowledge of Python.
+	We need your participation.
+    </p>
+</div>
+
+<!-- form action -->
+<form class="uk-form-stacked">
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Title</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Please Input text !">
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Your E-mail</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Please Input text !">
+        </div>
+    </div>
+
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-select">Content</label>
+         <textarea class="uk-textarea" rows="10" placeholder="Please Around 600 characters"></textarea>
+
+    </div>
+
+
+
+</form>
+<p uk-margin style="float: right;">
+    <button class="uk-button uk-button-primary" style="margin-left:-5%;margin-right:5%">SEND_E-mail</button>
+    <button class="uk-button uk-button-default">Back</button>
+</p>
+
+</div><!-- conteiner-->
+</body>
+</html>

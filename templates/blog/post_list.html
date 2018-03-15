@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+
+
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+<!-- font awesome-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+	<title>Wecome PyStory</title>
+</head>
+<body>
+<!-- 컨테이너 -->
+<div class="uk-container">
+<!-- Hearder-->
+<div uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <h3>Notice</h3>
+    <p>Hello.
+	To share your knowledge of Python.
+	We need your participation.
+    </p>
+</div>
+
+
+
+<!-- article -->
+<div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" style="border:  1px solid black">
+            <h3 class="uk-card-title"><i class="fas fa-list-ul" style="margin-right:3%"></i><b>Study Python</b></h3>
+            <div class="uk-cover-container">
+            <img src="{% static 'image/python.png' %}" alt="" >
+      		 </div>
+            <p>
+            	<a href="">space to share information about Python.</a></p>
+
+        </div>
+    </div><!--card1 -->
+
+    <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true" style="border:  1px solid black">
+            <h3 class="uk-card-title"><i class="fas fa-list-ul" style="margin-right:3%"></i><b>Study Django</b></h3>
+                   <div class="uk-cover-container">
+            <img src="{% static 'image/web.jpg' %}" alt="" >
+      		 </div>
+            <p><a href="">Space to share information about Django.</a></p>
+        </div>
+    </div><!-- card2-->
+
+
+</div><!-- article-->
+
+<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Notice</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Community</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Infomation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Question</h3>
+            <p><a href="http://localhost:8000/blog/question">See All You Want to Ask.</a></p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">What Develop</h3>
+            <p><a href="http://localhost:8000/blog/develop">Learn more about developments</a></p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Update</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</div>
+</div><!-- conteiner-->
+</body>
+</html>
